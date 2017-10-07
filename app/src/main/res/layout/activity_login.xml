@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/fl_login_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,12 +17,12 @@
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp">
 
+
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
+                    android:layout_height="200dp"
                     android:layout_centerInParent="true"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
                     android:contentDescription="@string/app_name"
                     android:descendantFocusability="beforeDescendants"
                     android:focusableInTouchMode="true"
@@ -29,9 +30,9 @@
 
 
                     <EditText
-                        android:id="@+id/edt_login_companyId"
+                        android:id="@+id/edt_username"
                         style="@style/edtiText"
-                        android:layout_marginTop="15dp"
+                        android:layout_marginTop="10dp"
                         android:background="@drawable/rectangle"
                         android:drawableRight="@android:drawable/ic_menu_edit"
                         android:hint="@string/username"
@@ -40,18 +41,22 @@
                         android:textColorHint="@color/colorPrimaryDark"
                         android:textSize="@dimen/txt_view_normal" />
 
-
-                    <EditText
-                        android:id="@+id/edt_login_password"
-                        style="@style/edtiText"
-                        android:layout_marginTop="10dp"
+                <com.xwray.passwordview.PasswordView
+                    android:id="@+id/pv_login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
                         android:background="@drawable/rectangle"
                         android:drawableRight="@android:drawable/ic_menu_edit"
+                    android:fontFamily="sans-serif"
                         android:hint="@string/password"
                         android:imeOptions="actionDone"
                         android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
                         android:textColorHint="@color/colorPrimaryDark"
-                        android:textSize="@dimen/txt_view_normal" />
+                    android:textSize="@dimen/txt_view_normal"
+                    app:useStrikeThrough="true" />
 
 
                 <LinearLayout
@@ -65,7 +70,6 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight=".3"
-
                         android:textStyle="bold"
                         android:visibility="visible" />
 

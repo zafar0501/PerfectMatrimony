@@ -8,8 +8,11 @@ import android.support.annotation.Nullable;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.ScrollView;
 import android.widget.TextView;
+
+import com.xwray.passwordview.PasswordView;
 
 import in.microlan.www.perfectmatrimony.R;
 import in.microlan.www.perfectmatrimony.common.base.BaseActivity;
@@ -19,13 +22,14 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
 
     private static final String TAG = LoginActivity.class.getSimpleName();
     private TextView txt_register, txt_forgot_password;
+    private EditText edt_username;
 
     //For the Validation we use Recycleview & ScrollView for UI Display
     private RecyclerView rcvValidationMessage;
     private ScrollView scvloginScroll;
-    private TextView textView_signwithfingerID, textView_forgot_login;
     private CheckBox checkBox;
     private Context context = LoginActivity.this;
+    private PasswordView password;
 
 
     @Override
@@ -40,7 +44,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         context = this;
         txt_register = (TextView) findViewById(R.id.txt_register);
         txt_forgot_password = (TextView) findViewById(R.id.txt_forgot_password);
-
+        password = (PasswordView) findViewById(R.id.pv_login_password);
+        edt_username = (EditText) findViewById(R.id.edt_username);
         txt_register.setOnClickListener(this);
         txt_forgot_password.setOnClickListener(this);
 

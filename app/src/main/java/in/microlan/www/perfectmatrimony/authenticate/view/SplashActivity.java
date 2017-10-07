@@ -24,6 +24,7 @@ public class SplashActivity extends BaseActivity implements View.OnClickListener
     @Override
     public void InitView() {
 
+
         btn_login = (Button) findViewById(R.id.btn_login);
         btn_signup = (Button) findViewById(R.id.btn_signup);
 

@@ -11,6 +11,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ScrollView;
 import android.widget.TextView;
+
 import in.microlan.www.perfectmatrimony.R;
 import in.microlan.www.perfectmatrimony.common.base.BaseActivity;
 
@@ -18,13 +19,13 @@ import in.microlan.www.perfectmatrimony.common.base.BaseActivity;
 
 public class LoginActivity extends BaseActivity implements  View.OnClickListener {
 
+    private static final String TAG = LoginActivity.class.getSimpleName();
+    public EditText edtCompany, edtUsername, edtPassword;
     private int mCurrentState;
     private Context context;
-    public EditText edtCompany, edtUsername, edtPassword;
     private String strCompanyId, strUsername, strPassword;
     private View viewProgressBar;
     private Button btnSignIn;
-    private static final String TAG = LoginActivity.class.getSimpleName();
    //For the Validation we use Recycleview & ScrollView for UI Display
     private RecyclerView rcvValidationMessage;
     private ScrollView scvloginScroll;

@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.RecyclerView;
+import android.text.SpannableString;
+import android.text.style.UnderlineSpan;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -46,6 +48,11 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         txt_forgot_password = (TextView) findViewById(R.id.txt_forgot_password);
         password = (PasswordView) findViewById(R.id.pv_login_password);
         edt_username = (EditText) findViewById(R.id.edt_username);
+
+        SpannableString content = new SpannableString("Registered");
+        content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
+        txt_register.setText(content);
+
         txt_register.setOnClickListener(this);
         txt_forgot_password.setOnClickListener(this);
 

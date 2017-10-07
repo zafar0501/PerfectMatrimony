@@ -64,7 +64,8 @@
             android:layout_marginLeft="1dp"
             android:layout_weight=".5"
             android:background="@color/tangerine"
-            android:text="@string/Signup" />
+            android:text="@string/Signup"
+            android:textColor="@color/whiteToo" />
     </LinearLayout>
 
 </LinearLayout>

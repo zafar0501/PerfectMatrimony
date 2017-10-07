@@ -17,8 +17,7 @@ import in.microlan.www.perfectmatrimony.R;
 import in.microlan.www.perfectmatrimony.common.base.BaseActivity;
 
 
-
-public class VerifyUsersActivity extends BaseActivity implements  View.OnClickListener {
+public class VerifyUsersActivity extends BaseActivity implements View.OnClickListener {
 
     private static final String TAG = LoginActivity.class.getSimpleName();
     public EditText edtCompany, edtUsername, edtPassword;
@@ -29,12 +28,10 @@ public class VerifyUsersActivity extends BaseActivity implements  View.OnClickLi
     //For the Validation we use Recycleview & ScrollView for UI Display
     private RecyclerView rcvValidationMessage;
     private ScrollView scvloginScroll;
-    private TextView textView_signwithfingerID,textView_forgot_login;
+    private TextView textView_signwithfingerID, textView_forgot_login;
     private CheckBox checkBox;
     private Context context = VerifyUsersActivity.this;
     private TextView txt_resend_otp;
-
-
 
 
     @Override
@@ -68,8 +65,7 @@ public class VerifyUsersActivity extends BaseActivity implements  View.OnClickLi
     }
 
     @Override
-    public void onBackPressed()
-    {
+    public void onBackPressed() {
         super.onBackPressed();
         finish();
     }

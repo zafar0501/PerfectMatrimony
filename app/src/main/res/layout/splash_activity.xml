@@ -2,67 +2,68 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/colorPrimaryDark">
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
 
 
     <LinearLayout
-        android:layout_marginTop="150dp"
-       android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
         android:orientation="vertical">
 
         <TextView
-            android:textStyle="normal|italic"
-            android:typeface="serif"
-            android:textSize="@dimen/txt_view_very_large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/app_name"
             android:textColor="@color/white"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:textSize="@dimen/txt_view_very_large"
+            android:textStyle="normal|italic"
+            android:typeface="serif" />
 
         <ImageView
-            android:layout_width="115dp"
-            android:layout_height="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
             android:layout_centerInParent="true"
-            android:src="@mipmap/matrimony" />
+            android:src="@mipmap/matrimony_three" />
     </LinearLayout>
 
 <ProgressBar
-    android:visibility="visible"
-    android:layout_gravity="center"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content" />
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:visibility="gone" />
     <LinearLayout
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:gravity=""
-        android:weightSum="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:gravity=""
+        android:orientation="horizontal"
+        android:weightSum="1">
 
         <Button
-            android:layout_marginRight="1dp"
-            android:textColor="@color/whiteToo"
-            android:background="@color/tomato"
-            android:layout_weight=".5"
-            android:layout_width="0dp"
             android:id="@+id/btn_login"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:text="@string/login" />
-        <Button
-            android:layout_marginLeft="1dp"
-            android:background="@color/tangerine"
+            android:layout_marginRight="1dp"
             android:layout_weight=".5"
+            android:background="@color/tomato"
+            android:text="@string/login"
+            android:textColor="@color/whiteToo" />
+
+        <Button
             android:id="@+id/btn_signup"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight=".5"
+            android:background="@color/tangerine"
             android:text="@string/Signup" />
     </LinearLayout>
 

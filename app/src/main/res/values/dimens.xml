@@ -3,7 +3,7 @@
 
     //TextView Size Define
     <dimen name="txt_view_small">14dp</dimen>
-    <dimen name="txt_view_normal">18dp</dimen>
+    <dimen name="txt_view_normal">15dp</dimen>
     <dimen name="txt_view_large">20dp</dimen>
     <dimen name="txt_view_very_large">25dp</dimen>
 </resources>

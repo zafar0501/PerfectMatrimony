@@ -10,7 +10,6 @@ import in.microlan.www.perfectmatrimony.common.presenter.IBaseActivityView;
 public abstract class BaseActivity extends AppCompatActivity implements IBaseActivityView {
 
 
-
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

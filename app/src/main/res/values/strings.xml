@@ -1,11 +1,33 @@
 <resources>
-    <string name="app_name">PerfectMatrimony</string>
+    <string name="app_name">MyMatrimony</string>
     <string name="action_settings">Settings</string>
     <string name="login">Log In</string>
     <string name="Signup">Sign Up</string>
-    <string name="username">UserName</string>
-    <string name="password">Password</string>
+    <string name="username">Please Enter UserName</string>
+    <string name="password">Please Enter Password</string>
     <string name="forgotpassword">Forgot Password</string>
-    <string name="not_yet_registered">Not Register yet</string>
-    <string name="register">Register</string>
+    <string name="forgot">Forgot</string>
+    <string name="verify_otp">Verify otp</string>
+    <string name="verify">Verify</string>
+    <string name="mobile_number">Please Enter Mobile Number</string>
+    <string name="mobile_otp">Please Enter OTP</string>
+    <string name="otp_resigtered">OTP is sent to your mobile just enter to verify</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="register">Registered</string>
+    <string name="not_yet_registered">Not yet registered</string>
+
+    <string name="full_name">Full Name</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="gender">Gender</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="pincode">Pincode</string>
+    <string name="setpassword">Password</string>
+
+    <string name="new_password">New password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="change_password">Change password</string>
+
+
 </resources>

@@ -43,14 +43,13 @@ public class SplashActivity extends BaseActivity  implements View.OnClickListene
             case R.id.btn_login:
             {
                 startActivity(new Intent(context,LoginActivity.class));
-                finish();
 
             }
             break;
             case R.id.btn_signup:
             {
                 startActivity(new Intent(context,SignUpActivity.class));
-                finish();
+
             }
             break;
         }

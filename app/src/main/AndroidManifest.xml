@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/matrimony"
+        android:icon="@mipmap/matrimony_three"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/matrimony"
         android:supportsRtl="true"
@@ -27,6 +27,16 @@
             android:theme="@style/AppTheme"/>
         <activity android:name=".authenticate.view.SignUpActivity"
             android:label="@string/Signup"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".authenticate.view.ForgotPasswordActivity"
+            android:label="@string/forgotpassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".authenticate.view.VerifyUsersActivity"
+            android:label="@string/verify"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"/>
     </application>

@@ -9,7 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class NetworkClient {
 
-    public static final String BASE_URL = "https://api.dev.etw.com/";
+    public static final String BASE_URL = "https://api.dev.microlan.com/";
     private static Retrofit retrofit = null;
 
     public static Retrofit getClient() {

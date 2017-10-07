@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="cornflowerBlue">#7daebc</color>
+    <color name="darkSeaBlue">#00607C</color>
+    <color name="steel">#818A91</color>
+    <color name="charcoalGrey">#373A3C</color>
+    <color name="warnGray">#999999</color>
+    <color name="gunMetal">#55595C</color>
+    <color name="midGreen">#4CAF50</color>
+    <color name="tomato">#F44336</color>
+    <color name="tangerine">#ff9800</color>
+    <color name="lightGray">#F7F7F9</color>
+    <color name="darkTwo">#212b39</color>
+    <color name="pinkishGray">#cccccc</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="paleGrey">#f7f7f9</color>
+    <color name="draftColor">#818A91</color>
+    <color name="suspendedColor">#000000</color>
+    <color name="completedColor">#51BFE2</color>
+    <color name="hintcolour">#999999</color>
+    <color name="background">#FBFBFB</color>
+    <color name="title_color">#999999</color>
+    <color name="charcoal_grey">#373A3C</color>
+    <color name="headercolor">#aa7e57c2</color>
+    <color name="sideBarGray">#ECECEC</color>
+    <color name="whiteToo">#FBFBFB</color>
+
+</resources>

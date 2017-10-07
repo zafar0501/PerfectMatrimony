@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+
+
+    <LinearLayout
+        android:layout_marginTop="150dp"
+       android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textStyle="normal|italic"
+            android:typeface="serif"
+            android:textSize="@dimen/txt_view_very_large"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="115dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/matrimony" />
+    </LinearLayout>
+
+<ProgressBar
+    android:visibility="visible"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity=""
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginRight="1dp"
+            android:textColor="@color/whiteToo"
+            android:background="@color/tomato"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:id="@+id/btn_login"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/login" />
+        <Button
+            android:layout_marginLeft="1dp"
+            android:background="@color/tangerine"
+            android:layout_weight=".5"
+            android:id="@+id/btn_signup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/Signup" />
+    </LinearLayout>
+
+</LinearLayout>

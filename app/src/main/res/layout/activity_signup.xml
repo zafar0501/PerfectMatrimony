@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_login_container"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteToo"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:layout_width="105dp"
+            android:layout_height="125dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/app_name"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:src="@mipmap/matrimony" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_login_companyId"
+            style="@style/inputTextLayout"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp">
+
+            <EditText
+                android:textSize="@dimen/txt_view_normal"
+                android:id="@+id/edt_login_companyId"
+                style="@style/edtiText"
+                android:hint="@string/username"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_login_password"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            style="@style/inputTextLayout">
+
+            <EditText
+                android:textSize="@dimen/txt_view_normal"
+                android:id="@+id/edt_login_password"
+                style="@style/edtiText"
+                android:drawableRight="@android:drawable/ic_lock_lock"
+                android:hint="@string/password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/chk_login_fingerprintId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+
+
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/txt_forgot_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="@string/forgotpassword"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/txt_view_small" />
+        <Button
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/btn_login_signin"
+            style="@style/button"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/login" />
+
+        <LinearLayout
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight=".6"
+                android:id="@+id/t"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/not_yet_registered"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/txt_view_small" />
+
+            <TextView
+                android:textStyle="bold|italic"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight=".5"
+                android:id="@+id/hj"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/register"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/txt_view_large" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
